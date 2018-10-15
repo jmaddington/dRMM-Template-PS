@@ -1,0 +1,13 @@
+<component info="CentraStage Component">
+  <general>
+    <name>demo</name>
+    <category>scripts</category>
+    <description>test</description>
+    <uid>3cd209ad-c89b-4b84-b9ea-08b2c445decf</uid>
+    <hash />
+    <version>4</version>
+    <timeout>3600</timeout>
+    <securityLevel>1</securityLevel>
+    <installType>powershell</installType>
+  </general>
+</component>
