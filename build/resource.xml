@@ -1,9 +1,9 @@
 <component info="CentraStage Component">
   <general>
-    <name>demo</name>
+    <name>Disk Usage Report</name>
     <category>scripts</category>
-    <description>test</description>
-    <uid>3cd209ad-c89b-4b84-b9ea-08b2c445decf</uid>
+    <description>Runs du, a small utility to report on the disk usage</description>
+    <uid>a4fc232b-e920-4d32-b9c8-e035d1336668</uid>
     <hash />
     <version>4</version>
     <timeout>3600</timeout>
