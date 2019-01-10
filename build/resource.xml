@@ -1,21 +1,13 @@
 <component info="CentraStage Component">
   <general>
-    <name>Disk Usage Report</name>
+    <name>test</name>
     <category>scripts</category>
-    <description>Runs du, a small utility to report on the disk usage</description>
-    <uid>a4fc232b-e920-4d32-b9c8-e035d1336668</uid>
+    <description>test</description>
+    <uid>8c54d077-96e0-4581-acc1-139dfd65fee9</uid>
     <hash />
     <version>4</version>
     <timeout>3600</timeout>
     <securityLevel>1</securityLevel>
     <installType>powershell</installType>
   </general>
-    </variable>
-    <variable idx='0'>
-    <name>dump_env_vars</name>
-    <type>boolean</type>
-    <direction>false</direction>
-    <description>Dump all env vars to stdout. Useful for debuggung,</description>
-    <defaultVal>true</defaultVal>
-  </variable>
 </component>
