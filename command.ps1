@@ -31,7 +31,7 @@ function Get-dRMMVariable {
 
     #Check to see if the script level variable is set to 0, indicating that a site/acct level variable should be used
     #but site/account level variable is missing
-    If ($script_variable -eq 0 -and $null-eq $site_variable) {
+    If ($script_variable -eq 0 -and $null -eq $site_variable) {
         #If no variable has been passed and this is mandatory, exit
         if ($exit_if_missing) {
             $exitcode = 1
@@ -41,6 +41,15 @@ function Get-dRMMVariable {
             if (!($null -eq $warning_message)) { Write-output $warning_message}
         }
     }
+
+    #Finally, we should have tested for all other options above. Return script_variable, if set, otherwise
+    #return the site/acct variable
+    If (!($script_variable -eq 0)) {
+        return $script_variable
+    } else {
+        return $site_variable
+    }
+
 } #End function
 
 #Generic function to gracefully exit dRMM PowerShell script
