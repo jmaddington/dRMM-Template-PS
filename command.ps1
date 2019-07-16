@@ -91,7 +91,7 @@ if ($env:drmm_dump_env_vars -eq "true") {
 If (!($env:test -eq "true")) {
 
     #Get variables
-    $hello_world_var = Get-DdRMMVariable -site_variable $env:hello_world_var -script_variable $env:script_hello_world_var -exit_if_missing $false -warning "Hello World value not set, continuing" -default "Hello world!"
+    $hello_world_var = Get-dRMMVariable -site_variable $env:hello_world_var -script_variable $env:script_hello_world_var -exit_if_missing $false -warning "Hello World value not set, continuing" -default "Hello world!"
 
 } else {
 
