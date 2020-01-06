@@ -76,6 +76,14 @@ function Exit-dRMMScript {
 
 } #End function
 
+#Generic function to set dRMM UDF
+#@param udf_number: mandatory, UDF number to set
+#@param udf_value: mandatory, value to set UDF to
+function Set-dRMM-UDF {
+    Param([Parameter(Mandatory=$true)]$udf_number, $udf_value)
+    REG ADD HKEY_LOCAL_MACHINE\SOFTWARE\CentraStage /v "Custom$udf_number" /t REG_SZ /d "$udf_value" /f
+}
+
 #Dump all the environmental variables to stdout, usually only for debugging
 if ($env:drmm_dump_env_vars -eq "true") {
     Get-ChildItem variable:$env | ForEach-Object {
