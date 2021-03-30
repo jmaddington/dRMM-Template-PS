@@ -19,7 +19,7 @@ function Get-dRMMVariable {
         #If no variable has been passed and this is mandatory, exit
         if ($exit_if_missing) {
             $exitcode = 1
-            dRMM-ExitScript -exitcode $exitcode -results $exit_message
+            Exit-dRMMScript -exitcode $exitcode -results $exit_message
         } else {
             #Otherwise throw a warning and carry on
             if (!($null -eq $warning_message)) { Write-output $warning_message}
